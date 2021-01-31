@@ -1,0 +1,185 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(122, 175, 170);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.bgcolor{
+    background: rgba(155, 1, 1, 0.555);
+}
+nav{
+    background: #17c0eb;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background-color: #7158e2;
+    transition: .5s;
+}
+
+
+/* Nav */
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+
+/* Section */
+
+.main{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.all{
+width: 300px;
+height: auto;
+background-color: rgb(235, 222, 149);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 20px;
+padding: 20px;
+border-radius: 4px;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 400;
+font-size: 18px;
+}
+.img{
+border:3px solid greenyellow;
+height: 100px;
+width: 100px;
+border-radius: 50%;
+margin-bottom: 20px;
+background-size: cover;
+background-position: center;
+padding: 20px;
+}
+.all:nth-child(1) .img{
+    background-image: url(/Service/web.jpg);
+}
+.all:nth-child(1) .img:hover{
+   transform:scale(1.1) ;
+}
+
+.all:nth-child(2) .img{
+    background-image: url(/Service/graphic\ design.jpg);
+}
+.all:nth-child(2) .img:hover{
+    transform:scale(1.1) ;
+ }
+
+.all:nth-child(3) .img{
+    background-image: url(/Service/web.jpg);
+}
+.all:nth-child(3) .img:hover{
+    transform:scale(1.1) ;
+ }
+
+
+ /* Media */
+/* Media */
+@media(max-width:1088px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:983px){
+.checkbtn{
+    display: block;
+    color: white;
+}
+ul{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #4b6584;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+}
+/* Checked */
+#check:checked ~ ul{
+    left: 0;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+a:hover,a.active{
+    background: none;
+    color: #26de81 ;
+}
+}
+
+@media (max-width:440px){
+    label.logo{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 20px;
+        text-align: center;
+    }
+}
